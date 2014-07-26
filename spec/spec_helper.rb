@@ -1,7 +1,6 @@
 require "active_support/all"
 require "pry-byebug"
 
-
 SPEC_DIR = Pathname.new("../").expand_path(__FILE__)
 Pathname.glob(SPEC_DIR.join("support/**/*.rb")).each { |f| require f }
 
