@@ -1,5 +1,3 @@
-require "pry-byebug"
-
 begin
   require "compass"
   require File.expand_path("../assets.rb", __FILE__)
