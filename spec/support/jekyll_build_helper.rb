@@ -1,10 +1,12 @@
+require "cocaine"
+
 module JekyllBuildHelper
   extend ActiveSupport::Concern
 
   def jekyll_build
     jekyll_clean
     Dir.chdir(jekyll_root) do
-      `bundle exec jekyll build`
+      Cocaine::CommandLine.new("bundle", "exec jekyll build").run
     end
   end
 

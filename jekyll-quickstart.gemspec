@@ -26,4 +26,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "pry-byebug"
   spec.add_development_dependency "rails-assets-jquery"
   spec.add_development_dependency "activesupport"
+  spec.add_development_dependency "cocaine"
 end
