@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/sunteya/jekyll-quickstart.svg?branch=master)](https://travis-ci.org/sunteya/jekyll-quickstart)
 
-integrate jekyll-assets, compass bower_rails and some useful helper to jekyll project.
+integrate jekyll-assets, compass, bower_rails and some useful helper to jekyll project.
 
 ## Installation
 
