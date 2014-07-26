@@ -20,5 +20,9 @@ tmp
 *.o
 *.a
 mkmf.log
-_site
+
 .ruby-version
+_site
+.sass-cache
+
+/spec/lib/jekyll/quickstart/compass_fixtures/_assets/images/colors-*.png
