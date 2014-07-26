@@ -1,0 +1,8 @@
+@import "compass";
+@import "colors/*.png";
+
+@each $name in red blue {
+  .#{$name} {
+    @include colors-sprite(#{$name});
+  }
+}
