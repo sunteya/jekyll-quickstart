@@ -5,7 +5,9 @@ begin
   Compass.configuration do |config|
     site = Jekyll::Site.new(Jekyll.configuration({}))
     config.sprite_load_path = site.assets.paths.to_a
-    image_pathname = Pathname.new(site.config['source']).join(site.assets_config.sources.last).relative_path_from(Pathname.pwd)
+
+    image_pathname = Pathname.new(site.config['source']).join(site.assets_config.sources.last)
+    image_pathname = image_pathname.relative_path_from(Pathname.pwd) if image_pathname.absolute?
     config.images_dir = image_pathname.to_s
   end
 
