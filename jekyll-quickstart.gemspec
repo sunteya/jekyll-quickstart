@@ -20,6 +20,10 @@ Gem::Specification.new do |spec|
   spec.add_dependency "jekyll"
   spec.add_dependency "jekyll-assets"
 
+  # optional
+  spec.add_development_dependency "compass"
+
+  # test
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "rake"
