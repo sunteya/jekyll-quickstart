@@ -16,6 +16,6 @@ class Jekyll::Site
 
     content = File.read(file)
     config = instance_eval(content, file, 0)
-    self.config = Jekyll::Utils.deep_merge_hashes(self.config, config)
+    @config = Jekyll::Utils.deep_merge_hashes(@config, config)
   end
 end
